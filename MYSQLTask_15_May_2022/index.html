@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="insert.php" method="post" enctype="multipart/form-data">
+        <lable for="name">Animal name</lable>
+        <input type="text" name="name"> <br>
+
+        <label for="sound">Animal sound</label>
+        <input type="text" name="sound"><br>
+
+        <label for="color">Animal color</label>
+        <input type="text" name="color"><br>
+
+        <label for="age">Animal age</label>
+        <input type="number" name="age"><br>
+
+        <input type="submit" name="add" value="add">
+    </form>
+
+
+    <form action="update.php" method="post">
+        <lable for="id">Animal id</lable>
+        <input type="text" name="up_id"> <br>
+
+        <lable for="upname">Animal name</lable>
+        <input type="text" name="up_name"> <br>
+
+        <label for="upsound">Animal sound</label>
+        <input type="text" name="up_sound"><br>
+
+        <label for="upcolor">Animal color</label>
+        <input type="text" name="up_color"><br>
+
+        <label for="upage">Animal age</label>
+        <input type="number" name="up_age"><br>
+
+        <input type="submit" name="update" value="update">
+
+    </form>
+
+    <form action="delete.php" method="post">
+        <div>
+            delete record no.5 : 
+        <input type="submit" name="delete" value="delete">
+
+        </div>
+
+    </form>
+    <form action="view.php" method="post">
+        <div>
+            Show table
+        <input type="submit" name="view" value="view">
+
+        </div>
+
+    </form>
+</body>
+
+</html>
